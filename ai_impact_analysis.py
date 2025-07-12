@@ -100,7 +100,6 @@ df["Impact Score"] = df[["Understand Less Score", "Struggle Score", "Creativity 
 # Label learning impact based on average score
 df["Learning Impact"] = df["Impact Score"].apply(lambda x: "Negative" if x >= 4 else "Positive")
 
-import matplotlib.pyplot as plt
 
 user_counts = df["User Type"].value_counts()
 
